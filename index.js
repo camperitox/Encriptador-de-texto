@@ -7,7 +7,7 @@ let subtitulo= document.querySelector(".subtitulo")
 let parrafo= document.querySelector(".parrafo")
 let mensaje= document.querySelector(".mensaje")
 let copiar= document.querySelector(".copiar")
-let escuchar= document.querySelector(".escuchar")
+let borrar= document.querySelector(".borrar")
 
 /*colocar cursor en entrada*/
 area.focus()
@@ -59,6 +59,13 @@ function copiarTexto() {
     area.focus()
     pegarTexto()
 }
+function borrarTexto() {
+    let texto= mensaje.value
+    mensaje.value= ""
+    let area= document.querySelector(".area")
+    area.value= ""
+    area.focus()
+}
 function pegarTexto() {
     navigator.clipboard.readText().then(texto => {
         area.value= texto
@@ -69,3 +76,4 @@ function pegarTexto() {
 encriptar.onclick= encriptarTexto
 desencriptar.onclick= desencriptarTexto
 copiar.onclick= copiarTexto
+borrar.onclick= borrarTexto

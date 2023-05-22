@@ -40,8 +40,8 @@ h1 {
     align-items: center;
 }
 .red {
-    width: 75%;
-    height: 75%;
+    width: 50%;
+    height: 50%;
     filter: contrast(180%);
 }
 /*principal*/
@@ -159,6 +159,19 @@ section.segunda-seccion {
     background: #07549b;
     color: white;
 }
+.borrar{
+  width: 35%;
+    height: 10%;
+    margin-right: 3%;
+    border-radius: 5px;
+    background: #da0d4a;
+    color: white;
+    transition: 0.5s;
+}
+.borrar:hover{
+    background: #740828;;
+    color: white;
+}
 
 /*pie de página*/
 footer {
@@ -267,9 +280,9 @@ footer p span {
 }
 /*móvil*/
 @media screen and (max-width: 375px) and (max-height: 933px) {
-  heasegunda-seccion {
+  header{
     width: 100%;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
   }
   .logo {
     width: 10%;
@@ -335,11 +348,6 @@ footer p span {
     width: 35%;
     height: 12%;
     margin-right: 3%;
-    font-size: 60%;
-  }
-  .escuchar {
-    width: 35%;
-    height: 12%;
     font-size: 60%;
   }
   footer p {
