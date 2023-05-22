@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <!--css-->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!--css aos-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--google fonts-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap');
+        </style>
+    </head>
+    <body>
+        <!--encabezado-->
+        <header>
+            <h1 class="titulo-principal">Encriptador de texto</h1>
+        </header>
+
+        <!--principal-->
+        <main>
+            <video src="images/matrix.mp4" autoplay="true" muted="true" loop="true"></video>
+            <!--primera sección-->
+            <section class="primera-seccion">
+                <textarea class="area" placeholder="Ingrese el texto aquí"></textarea>
+                <input class="encriptar" type="button" value="Encriptar">
+                <input class="desencriptar" type="button" value="Desencriptar">
+            </section>
+            <!--segunda sección-->
+            <section class="segunda-seccion">
+                <img class="animacion" src="./images/animacion.png" alt="animacion">
+                <h3 class="subtitulo">Ningún mensaje fue encontrado</h3>
+                <p class="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <textarea class="mensaje"></textarea>
+                <input class="copiar" type="button" value="Copiar">
+            </section>
+        </main>
+
+        <!--pie de página-->
+        <footer>
+            <div class="redes">
+                <a href="https://github.com/camperitox" target="_blank"><img class="red" src="./images/git.png" alt="Git Hub"></a>
+                <a href="https://www.linkedin.com/in/carolina-mel%C3%A9ndez-65175b272/" target="_blank"><img class="red" src="./images/linkedin.png" alt="Linkedin"></a>
+            </div>
+        </footer>
+
+        <!--javascript-->
+        <script src="index.js"></script>
+        <!--javascript aos-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
