@@ -27,9 +27,10 @@ video {
 }
 h1 {
     text-align: center;
-    font-size: 250%;
+    padding: 10px;
+    font-size: 200%;
     color: #0C8AFF;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .redes {
     width: 10%;
@@ -122,12 +123,13 @@ section.segunda-seccion {
 .subtitulo {
     font-size: 130%;
     color: white;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .parrafo {
-    font-size: 110%;
+    font-size: 100%;
     color: white;
     margin-bottom: 100%;
+    font-family: 'Abel', sans-serif;
 }
 .ocultar {
     display: none;
@@ -186,7 +188,7 @@ footer {
 footer p {
     font-size: 100%;
     color: #0C8AFF;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-shadow: 1px 1px 2px white;
     letter-spacing: 2px;
     overflow: hidden;
