@@ -8,9 +8,16 @@ let parrafo= document.querySelector(".parrafo")
 let mensaje= document.querySelector(".mensaje")
 let copiar= document.querySelector(".copiar")
 let borrar= document.querySelector(".borrar")
+const textarea = document.querySelector('.area');
 
 /*colocar cursor en entrada*/
 area.focus()
+textarea.addEventListener('focus', () => {
+  textarea.removeAttribute('placeholder');
+});
+textarea.addEventListener('blur', () => {
+  textarea.setAttribute('placeholder', 'Ingrese el texto aquí');
+});
 
 /*funciones*/
 function validarEntrada(texto) {
@@ -53,14 +60,11 @@ function ocultaranimacion() {
 function copiarTexto() {
     let texto= mensaje.value
     navigator.clipboard.writeText(texto)
-    mensaje.value= ""
     let area= document.querySelector(".area")
-    area.value= ""
     area.focus()
     pegarTexto()
 }
 function borrarTexto() {
-    let texto= mensaje.value
     mensaje.value= ""
     let area= document.querySelector(".area")
     area.value= ""
